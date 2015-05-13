@@ -17,6 +17,13 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/test', function(req, res) {
+  fs.readFile('test.html', function(err, data) {
+    res.setHeader('Content-Type', 'text/html');
+    res.send(data);
+  });
+});
+
 app.listen(app.get('port'), function() {
   console.log('Server started: http://localhost:' + app.get('port') + '/');
 });
