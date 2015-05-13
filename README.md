@@ -1,0 +1,2 @@
+# Easy React Starter Skeleton
+

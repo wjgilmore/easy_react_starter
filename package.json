@@ -1,0 +1,15 @@
+{
+  "name": "easy-react-starter",
+  "version": "0.0.1",
+  "description": "Easy React starter skeleton",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : { 
+   "type" : "git",
+   "url" : "http://github.com/wjgilmore/easy_react_starter.git"
+  },
+  "author": "W. Jason Gilmore",
+  "license": "MIT"
+}
