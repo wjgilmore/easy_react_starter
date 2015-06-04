@@ -1,7 +1,7 @@
 var Hello = React.createClass({
     render: function() {
         return (
-         <h1>Welcome to SpiesInDC</h1>
+         <h1>Welcome to FamChat</h1>
         );
     }
 });
