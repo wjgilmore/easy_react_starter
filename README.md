@@ -8,9 +8,12 @@ Learn more about the book at [http://easyreactbook.com](http://easyreactbook.com
 
 ## Chapter 1: Introducing React
 
+This chapter is accompanied by four branches. Throughout the chapter I'll give you a heads-up regarding the appropriate time to switch to the next branch. The branches currently include:
 
-
-* `user_input`: This branch demonstrates
+* `master`: This branch demonstrates how to create your first component
+* `user_input`: This branch demonstrates how to detect and respond to user input
+* `vocab_filter`: This branch demonstrates how to create a simple real-time search filter
+* `json_loader`: This branch demonstrates how to load and render JSON
 
 ## Chapter 2: Configuring a Sane React Development Environment
 
