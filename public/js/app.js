@@ -1,7 +1,7 @@
 var SearchBox = React.createClass({
     handleChange: function() {
       this.props.onUserInput(
-          this.refs.filterTerms.getDOMNode().value
+          this.refs.filterTerms.value
       );
     },
     render: function() {
