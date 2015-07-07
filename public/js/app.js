@@ -81,5 +81,5 @@ var Home = React.createClass({
 
 var terms = ['mare', 'sole', 'sabbia', 'acqua', 'spiaggia'];
 
-React.render(<Home terms={terms} />, document.body);
+React.render(<Home terms={terms} />, document.getElementById('app'));
 
