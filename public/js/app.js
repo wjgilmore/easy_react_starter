@@ -1,3 +1,5 @@
+"use strict";
+
 var Hello = React.createClass({
     render: function() {
         return (
