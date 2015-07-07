@@ -47,4 +47,4 @@ var Home = React.createClass({
   }
 });
 
-React.render(<Home />, document.body);
+React.render(<Home />, document.getElementById('app'));
