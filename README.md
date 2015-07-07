@@ -31,7 +31,7 @@ Forthcoming
 
 Forthcoming
 
-## Chapter 6: Integrating a Database
+## Chapter 6: Integrating the MongoDB Database
 
 Forthcoming
 
