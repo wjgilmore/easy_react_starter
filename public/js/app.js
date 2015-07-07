@@ -1,3 +1,5 @@
+"use strict";
+
 var ListItem = React.createClass({
   render: function() {
     return (
