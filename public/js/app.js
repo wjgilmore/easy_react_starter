@@ -1,3 +1,5 @@
+"use strict";
+
 var SearchBox = React.createClass({
     handleChange: function() {
       this.props.onUserInput(
