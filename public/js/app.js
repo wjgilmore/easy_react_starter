@@ -49,4 +49,4 @@ var Home = React.createClass({
   }
 });
 
-React.render(<Home url="http://localhost:3000/vocabulary.json" />, document.body);
+React.render(<Home url="http://localhost:3000/vocabulary.json" />, document.getElementById('app'));
