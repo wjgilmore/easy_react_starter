@@ -21,7 +21,7 @@ Forthcoming
 
 ## Chapter 3: Integrating HTML, CSS, Layouts and Routes
 
-Forthcoming
+* `inline_styles`: This branch demonstrates how to integrate and dynamically update inline styles.
 
 ## Chapter 4: Getting Fluxxy With It
 
