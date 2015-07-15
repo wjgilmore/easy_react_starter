@@ -4,8 +4,8 @@
   "description": "Vocabulary trainer",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build-js": "browserify -t [babelify] src/js/App.jsx > public/js/app.js",
+    "build": "npm run build-js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,11 @@
   },
   "devDependencies": {
     "babelify": "^6.1.3",
-    "browserify": "^10.2.6"
+    "browserify": "^10.2.6",
+    "gulp": "^3.9.0",
+    "gulp-param": "^0.6.3",
+    "gulp-util": "^3.0.6",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.3"
   }
 }
