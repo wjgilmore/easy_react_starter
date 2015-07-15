@@ -1,10 +1,17 @@
 var gulp = require('gulp');
+var less = require('gulp-less');
 var gutil = require('gulp-util');
 var gulp = require('gulp-param')(require('gulp'), process.argv);
 var browserify = require('browserify');
 var babelify = require('babelify');
 var watchify = require('watchify');
 var source = require('vinyl-source-stream');
+
+gulp.task('build-css', function(){
+  return gulp.src(['src/css/*.less'])
+    .pipe(less())
+    .pipe(gulp.dest('./public/css'));
+});
 
 gulp.task('build', function(watch) {  
 

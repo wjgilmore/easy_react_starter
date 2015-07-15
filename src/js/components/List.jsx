@@ -5,7 +5,7 @@ var React = require('react'),
 
 var List = React.createClass({
   render: function() {
-console.log("HELLO");
+
     var words = [
       {
         "origin": "accogliere",
@@ -26,9 +26,12 @@ console.log("HELLO");
     });
 
     return (
+     <div>
+     <h1>Italian Verbs</h1>
      <ul className="list-group">
      {listItems}
      </ul>
+     </div>
     );
   }
 });
