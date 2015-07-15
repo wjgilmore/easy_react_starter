@@ -17,7 +17,7 @@ This chapter is accompanied by four branches. Throughout the chapter I'll give y
 
 ## Chapter 2: Configuring a Sane React Development Environment
 
-`react_browserified`: This branch provides a working example demonstrating React, Browserify, and Babelify integration.
+* `react_browserified`: This branch provides a working example demonstrating React, Browserify, and Babelify integration.
 
 ## Chapter 3: Integrating HTML, CSS, Layouts and Routes
 
