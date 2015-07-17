@@ -4,27 +4,6 @@ var React = require('react'),
     ReactDOM = require('react-dom'),
     Bootstrap = require('bootstrap');
 
-var ModalOpen = React.createClass({ 
-
-  clickHandler: function(e) {
-    $(ReactDOM.findDOMNode(this.refs[this.props.modalId])).modal();
-  }, 
-
-  render: function() {
-    return (
-      <div onClick={this.clickHandler}>
-        {this.props.open}
-        <Modal ref={this.props.modalId}
-          header={this.props.header}
-          body={this.props.body}
-          footer={this.props.footer}
-        />
-      </div>
-      ); 
-  }
-  
-});
-
 var Modal = React.createClass( { 
 
   componentDidMount: function() {
@@ -56,18 +35,27 @@ var Modal = React.createClass( {
 
 });
 
-var ModalPackage = React.createClass({
+var ModalPackage = React.createClass({ 
+
+  clickHandler: function(e) {
+    $(ReactDOM.findDOMNode(this.refs[this.props.modalId])).modal();
+  }, 
+
   render: function() {
     return (
-      <ModalOpen
-      modalId={this.props.modalId}
-      open={<p><a href="#">{this.props.linkName}</a></p>}
-      header={<h1>About VocabGiant</h1>}
-      body={<div>VocabGiant is the best!</div>}
-      footer={<button data-dismiss="modal">Close</button>}
-      /> 
-    );
+      <div onClick={this.clickHandler}>
+        {this.props.open}
+        <Modal 
+         ref={this.props.modalId}
+         open={<p><a href="#">{this.props.linkName}</a></p>}
+         header={<h1>About VocabGiant</h1>}
+         body={<div>VocabGiant is the best!</div>}
+         footer={<button data-dismiss="modal">Close</button>}
+        />
+      </div>
+      ); 
   }
+  
 });
  
 module.exports = ModalPackage;
