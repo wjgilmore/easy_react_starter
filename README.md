@@ -23,7 +23,7 @@ This chapter is accompanied by four branches. Throughout the chapter I'll give y
 
 * `inline_styles`: This branch demonstrates how to integrate and dynamically update inline styles.
 
-* `react_bootstrap`: This branch demonstrates how to install Bootstrap using npm, override a few default Bootstrap styles, use Gulp to compile the Bootstrap source files along with your overrides, and then apply those styles to a series of React components.
+* `react_bootstrap`: This branch demonstrates how to install Bootstrap using npm, override a few default Bootstrap styles, use Gulp to compile the Bootstrap source files along with your overrides, and then apply those styles to a series of React components. Also included is a demonstration of how to integrate a Bootstrap jQuery plugin (the modal) into a React component.
 
 ## Chapter 4: Getting Fluxxy With It
 
