@@ -14,6 +14,7 @@ This chapter is accompanied by four branches. Throughout the chapter I'll give y
 * `user_input`: This branch demonstrates how to detect and respond to user input
 * `vocab_filter`: This branch demonstrates how to create a simple real-time search filter
 * `json_loader`: This branch demonstrates how to load and render JSON
+* `mounting_example`: This branch demonstrates various lifecycle methods (`componentDidMount`, `componentWillMount`, `componentWillReceiveProps`, etc).
 
 ## Chapter 2: Configuring a Sane React Development Environment
 
