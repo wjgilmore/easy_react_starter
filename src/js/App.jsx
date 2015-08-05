@@ -1,10 +1,27 @@
 "use strict";
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 
-var List = require('./components/List.jsx');
-var Modal = require('./components/Modal.jsx');
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var Link = ReactRouter.Link;
 
-ReactDOM.render(<List />, document.getElementById('app'));
-ReactDOM.render(<Modal modalId='about' linkName="About VocabGiant" />, document.getElementById('about'));
+var browserHistory = require('react-router/lib/BrowserHistory').history;
+
+//import BrowserHistory from 'react-router/lib/BrowserHistory';
+
+var App = require('./components/App.jsx');
+var Lists = require('./components/List.jsx');
+var About = require('./components/About.jsx');
+
+//new BrowserHistory()
+
+React.render((
+	<Router history={browserHistory}>
+		<Route path="/" component={App}>
+			<Route name="lists" path="lists" component={Lists}/>
+			<Route name="about" path="about" component={About}/>
+		</Route>
+	</Router>
+), document.getElementById('content'));
